@@ -2,6 +2,8 @@
 name: Release tagged build
 
 on:
+  repository_dispatch:
+  workflow_dispatch:
   push:
     tags: [ '*' ]
 

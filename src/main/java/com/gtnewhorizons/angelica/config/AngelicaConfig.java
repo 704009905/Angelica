@@ -40,7 +40,6 @@ public class AngelicaConfig {
     @Config.Comment("Enable MCPatcherForge features, still in Alpha. Individual features are toggled in mcpatcher.json")
     @Config.DefaultBoolean(false)
     @Config.RequiresMcRestart
-    @Config.Ignore()
     public static boolean enableMCPatcherForgeFeatures;
 
     @Config.Comment("Replace some vanilla render paths with more optimized versions. Disable if you encounter mixin conflicts.")
@@ -80,7 +79,7 @@ public class AngelicaConfig {
     public static boolean enableFontRenderer;
 
     @Config.Comment("Enable Dynamic Lights")
-    @Config.DefaultBoolean(false)
+    @Config.DefaultBoolean(true)
     @Config.RequiresMcRestart
     public static boolean enableDynamicLights;
 
